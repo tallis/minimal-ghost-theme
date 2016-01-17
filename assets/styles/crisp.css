@@ -48,7 +48,7 @@ p, hr, h4, h5, h6 {
 }
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Bree Serif", serif;
+	/*font-family: "Bree Serif", serif;*/
 	font-weight: 400 !important;
 }
 h1 {
@@ -85,7 +85,7 @@ img, iframe {
 a {
 	font-weight:700;
 	text-decoration:none;
-	color: #5cc265; /* Change Link Color */
+	color: #4495CC; /* Change Link Color */
 }
 a:hover {
 	text-decoration:underline;
@@ -99,7 +99,7 @@ strong {
 blockquote {
 	border-left: 0.4em solid #eee;
 	padding-left: 1.2em;
-	font-size: 1.3em;
+	font-size: 0.9em;
 }
 hr{
  	border: 0;
@@ -110,7 +110,7 @@ ul, ol {
 	margin-left: 3em; 
 }
 code {
-	font-size:1.4em;
+	font-size: 1em;
 	background: #eee;
 }
 pre {
@@ -142,8 +142,6 @@ header h1 a:hover {
 	text-decoration:none;
 }
 header #logo img {
-	width:9em;
-	height:9em;
 	border-radius:4.5em;
 	-moz-border-radius: 4.5em;
 	-webkit-border-radius: 4.5em;
@@ -181,7 +179,7 @@ h3.post-title {
 	margin-top:0.4em;
 	padding-bottom:0.9em;
 	border-bottom: 1px solid #eee;
-	font-size: 1.2em;
+	font-size: 0.8em;
 	color: #444;
 }
 .post-title .feature-star {
@@ -189,6 +187,9 @@ h3.post-title {
 }
 .separator, .taglist, .feature-star {
 	color: #ccc;
+}
+.date_separator {
+	font-size: 0.6em;
 }
 .taglist a {
 	background-color:#ccc;

@@ -1,3 +1,16 @@
 {{!< default}}
-{{> postlist}}
-{{pagination}}
+{{#is "index"}}
+{{#get "posts" slug="index"}}
+  <h2>Welcome</h2>
+  {{#post}}
+  <h2><a href="{{slug}}">{{title}}</a></h2>
+  <div class="post-content">
+    {{content}}
+  </div>
+  {{/post}}
+{{/get}}
+
+{{else}}
+    {{> postlist}}
+    {{pagination}}
+{{/is}}

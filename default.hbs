@@ -29,7 +29,7 @@
 	<body class="{{body_class}}">
 		<header id="header">
 			{{#if @blog.logo}}<a id="logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
-			<h1><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+<!--			<h1><a href="{{@blog.url}}">{{@blog.title}}</a></h1>-->
 			<p>{{@blog.description}}</p>
 			{{> follow}}
 			{{navigation}}
@@ -38,7 +38,7 @@
 			{{{body}}}
 		</main>
 		<footer id="footer">
-			<section id="footer-message">&copy; {{date format='YYYY'}} {{@blog.title}}. All rights reserved. Powered by <a href="http://ghost.org" target="_blank">Ghost</a>. <a href="https://github.com/kathyqian/crisp-ghost-theme" target="_blank">Crisp</a> theme by <a href="http://kathyqian.com" target="_blank">Kathy Qian</a>.</section>
+			<section id="footer-message">&copy; {{date format='YYYY'}} {{@blog.title}}. Powered by Veniam Stratus™ team.</section>
 		</footer>
 	{{ghost_foot}}
 	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
