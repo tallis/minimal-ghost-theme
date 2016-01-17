@@ -4,7 +4,7 @@
 	<div class="post-stamp"><span class="taglist">{{tags separator=" "}}</span><span class="date_separator"><span class="separator"> &middot; </span> Last update: {{date updated_at format='MMMM D, YYYY'}} </span>{{#if featured}}<i class="fa fa-star-o feature-star"></i>{{/if}}</div>
 	<h1 class="post-title">{{title}}</h1>
 	{{content}}
-	<a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=CHANGE@THIS.com&tf=1&body={{#encodeURI content}}&su={%5BEvent%20Name%5D%20Follow%20Up%3A%20Veniam}"
+	<a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=CHANGE@THIS.com&tf=1&body={{encodeURI content}}&su=%5BEvent%20Name%5D%20Follow%20Up%3A%20Veniam">Mail to!</a>
 	{{> share}} 
   {{> comments}}
 </article>  
