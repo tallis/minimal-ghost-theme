@@ -5,10 +5,21 @@
 	<h1 class="post-title">{{title}}</h1>
 	{{content}}
     <hr>
+    <div id="email-format-text">
     <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=CHANGE@THIS.COM&tf=1&bcc=%5BYour+Salesforce+email%5D&su=%5BEvent%20Name%5D%20Follow%20Up%3A%20Veniam">Mail to!</a>
 	<div class="email-format">
 	 {{content}}
 	</div>
+	</div>
+    <script>
+        // Default hide email to. Will display if post is tagged as tag-email-templates
+        document.getElementById("email-format-text").style.display = "none";        
+        var post_class = "{{post_class}}"
+        if(post_class.indexOf("tag-email-templates")>0){
+             document.getElementById("email-format-text").style.display = "visible";
+        
+        }
+    </script>
     {{> share}} 
   {{> comments}}
 </article>  
