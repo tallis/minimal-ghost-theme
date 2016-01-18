@@ -6,7 +6,9 @@
 	{{content}}
     <hr>
     <div id="email-format-text">
-    <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=CHANGE@THIS.COM&tf=1&bcc=%5BYour+Salesforce+email%5D&su=%5BEvent%20Name%5D%20Follow%20Up%3A%20Veniam">Mail to!</a>
+    <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=CHANGE@THIS.COM&tf=1&bcc=%5BYour+Salesforce+email%5D&su=%5BEvent%20Name%5D%20Follow%20Up%3A%20Veniam">Send Email!</a>
+       <h3>Email Instructions</h3>
+       <p>Select the following text and click in "Send Email!" and make all the required changes in your Gmail compose editor.</p>
 	<div class="email-format">
 	 {{content}}
 	</div>
@@ -16,8 +18,7 @@
         document.getElementById("email-format-text").style.display = "none";        
         var post_class = "{{post_class}}"
         if(post_class.indexOf("tag-email-templates")>0){
-             document.getElementById("email-format-text").style.display = "visible";
-        
+             document.getElementById("email-format-text").style.display = "inline";
         }
     </script>
     {{> share}} 

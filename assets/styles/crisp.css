@@ -208,7 +208,15 @@ h3.post-title {
 	-webkit-border-radius: 0.25em;
 }
 /* Added email format to facilitate copy paste to Gamil*/
-.email-format p, li{
+.email-format p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    font-size: 9.8pt;
+    font-weight: normal;
+    letter-spacing: 0.01em;	
+	line-height: normal
+}
+.email-format li {
     font-family: Arial, Helvetica, sans-serif;
     color: #333;
     font-size: 9.8pt;
